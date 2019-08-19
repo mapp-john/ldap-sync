@@ -72,7 +72,7 @@ while True:
                 search_for_group = r.search()
                 results = search_for_group[0]['member']
             except IndexError:
-                print('Error with group: %s' % group['nestedGroup'])
+                print(f'Error with group: {group["nestedGroup"]}')
                 results = []
             for user in results:
                 print(user)
